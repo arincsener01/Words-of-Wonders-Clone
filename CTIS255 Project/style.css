@@ -1,0 +1,179 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(northernlights.jpg);
+}
+#container {
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+/* .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px dodgerblue, 0 0 40px  dodgerblue, 0 0 50px  dodgerblue, 0 0 60px  dodgerblue, 0 0 70px  dodgerblue;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px dodgerblue, 0 0 40px  dodgerblue, 0 0 50px  dodgerblue, 0 0 60px  dodgerblue, 0 0 70px  dodgerblue, 0 0 80px  dodgerblue;
+    }
+  } */
+h1 {
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 22px;
+    font-size: 100%;
+}
+.letters {
+    position: absolute;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: whitesmoke;
+}
+.letters:first-of-type {
+    left: 100px;
+    top: 0px;
+}
+.letters:nth-of-type(2) {
+    left: 10px;
+    top: 70px;
+}
+.letters:nth-of-type(3) {
+    left: 25px;
+    bottom: 30px;
+}
+.letters:nth-of-type(4) {
+    right: 25px;
+    bottom: 30px;
+}
+.letters:nth-of-type(5) {
+    right: 10px;
+    bottom: 115px;
+}
+.letters:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.crossword {
+    font-size: 40px;
+    position: relative;
+}
+#selectedLetter {
+    background-color: darkgreen;
+    border-radius: 50%;
+}
+.words {
+    position: absolute;
+}
+.words:first-of-type {
+    left: 81px;
+    top: 50px;
+}
+.words:nth-of-type(2) {
+    right: 125px;
+    top: 42px;
+    flex-direction: column;
+    display: flex;
+}
+.words:nth-of-type(3) {
+    top: 230px;
+    right: 43px;
+}
+.words:nth-of-type(4) {
+    left: 79px;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.words:nth-of-type(5) {
+    right: 40px;
+    top: 108px;
+}
+.words:nth-of-type(6) {
+    left: 175px;
+    top: -17px;
+    display: flex;
+    flex-direction: column;
+}
+.words:last-of-type {
+    left: 359px;
+    top: 223px;
+    display: flex;
+    flex-direction: column;
+} 
+.words span {
+    background-color: white;
+    position: relative;
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+}
+.input {
+    position: absolute;
+    font-size: 40px;
+    top: 410px;
+    left: 220px;
+    border-radius: 25%;
+    padding: 3px 10px;
+    background-color: darkgreen;
+    color: white;
+    display: none;
+}
+.hint img {
+    left: 80px;
+    padding: 5px;
+    position: absolute;
+    bottom: 200px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    border: 2px dotted white;
+    width: 40px;
+}
+.hint img:hover {
+    cursor: pointer;
+}
+.wheel {
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 130px;
+    top: 470px;
+    color: whitesmoke;
+}
+.sIcon {
+    left: 105px;
+    top: 100px;
+    width: 35px;
+    position: absolute;
+    border-radius: 50%;
+}
+.sButton:hover {
+    cursor: pointer;
+}
+/* #answers {
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    margin-top: 250px;
+    margin-right: 500px;
+    display: none;
+} */
